@@ -4,3 +4,8 @@ from django.views.generic import CreateView, ListView, UpdateView, DetailView, T
 
 class IndexView(TemplateView):
   template_name = 'techapp/index.html'
+
+def Search(request):
+    params = {
+    }
+    return render (request, 'techapp/index.html', params)
